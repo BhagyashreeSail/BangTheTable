@@ -17,15 +17,14 @@
         }
         .navbar{
             background-color: #52557e;
-            height: 30px;
-            box-shadow: 0px 2px #52557e;
+            height: 40px;
+            box-shadow: 0px 2px #363861;
         }
         .title{
             color: #c3c7db;
             position:absolute;
-            padding-top:6px;
+            padding-top:12px;
             font-weight: bold;
-            padding-left: 50px;
         }
         .grid-container{
             display: grid;
@@ -126,19 +125,99 @@
             padding-left: 5px;
             padding-right: 17px;
         }
+        .users{
+            margin:25px;
+        }
+        .search{
+            float: right;
+            height: 40px;
+            width: 20%;
+            background-color: #5a5f89;
+            border: none;
+        }
+        .search::placeholder{
+            color:#aaaed1;
+            padding-left: 20px;
+        }
+        .btn-right{
+            float: right;
+            height: 40px;
+            width: 40px;
+            background-color: #a88cd9;
+            border: none;
+        }
+        .btn-mix{
+            color: #ead4f5;
+            height: 32px;
+            width: 133px;
+            background-color: #a88cd9;
+            border: none;
+            border-radius: 2%;
+            margin-top: 20px;
+        }
         #content{
             overflow: hidden;
             display: -webkit-box;
             -webkit-line-clamp: 5;
             -webkit-box-orient: vertical;
         }
+        .spinner {
+            width: 50px;
+            margin-left:10px;
+            display: inline-block;
+        }
+
+        .spinner > div {
+            width: 10px;
+            height: 10px;
+            margin-top:16px;
+            background-color: #fcffff;
+            border-radius: 100%;
+            display: inline-block;
+            -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+            animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+        }
+
+        .spinner .bounce1 {
+            -webkit-animation-delay: -0.32s;
+            animation-delay: -0.32s;
+        }
+
+        .spinner .bounce2 {
+            -webkit-animation-delay: -0.16s;
+            animation-delay: -0.16s;
+        }
+
+        @-webkit-keyframes sk-bouncedelay {
+            0%, 80%, 100% { -webkit-transform: scale(0) }
+            40% { -webkit-transform: scale(1.0) }
+        }
+
+        @keyframes sk-bouncedelay {
+            0%, 80%, 100% { 
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            } 40% { 
+                -webkit-transform: scale(1.0);
+                transform: scale(1.0);
+            }
+        }
+
     </style>
 </head>
 <body>
     <div>
         <div class="navbar">
             <div>
+                <div class="spinner">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                  </div>
                 <span class="title">Bang The Table</span>
+                <button type="submit" class="btn-right" style="color:#ead4f5"><i class="fa fa-check" aria-hidden="true"></i></button>
+                <input type="text" class="search" placeholder="Subscribe to the newsletter">
+                
             </div>
         </div>
         <div class="containter">
@@ -172,7 +251,7 @@
                 <div class="grid-item2 card">
                     <div class="fab-deploy-img"></div>
                     <div class="card-item">
-                        <li style="list-style-type: circle; color:#a699d8;font-weight: bold;">
+                        <li style="list-style-type: circle; color:#ffc718;font-weight: bold;margin-top: 10px;">
                             <span style="color:#7f84ae">Library Update</span>
                         </li>
                         <h3 style="padding-top: 3%;font-size: 23px;color:#fafbff">Leveraging Social Proof for <br> Growth</h3>
@@ -198,8 +277,8 @@
                 <div class="grid-item3 card">
                     <div class="team-img"></div>
                     <div class="card-item">
-                        <li style="list-style-type: circle; color:#a699d8;font-weight: bold;">
-                            <span style="color:#7f84ae">Library Update</span>
+                        <li style="list-style-type: circle; color:#c7c8dd;font-weight: bold;margin-top: 10px;">
+                            <span style="color:#7f84ae">Culture and Team</span>
                         </li>
                         <h3 style="padding-top: 3%;font-size: 23px;color:#fafbff">Leveraging Social Proof for <br> Growth</h3>
                         <p id='content' style="font-size: 10px;padding-top: 3%; margin-right: 20px;line-height: 17px;color:#d7daf1">Duolingo removes language barriers by connecting people that need 
@@ -222,20 +301,23 @@
                     </div>
                 </div> 
                 <div class="grid-item4 card">
-                    <div class="card-item">
-                        <li style="list-style-type: circle; color:#a699d8;font-weight: bold;">
-                            <span style="color:#7f84ae">Library Update</span>
-                        </li>
-                        <h3 style="padding-top: 3%;font-size: 23px;color:#fafbff">Leveraging Social Proof for <br> Growth</h3>
-                        
+                    <div class="card-item users">
+                        <div class="spinner">
+                            <div class="bounce1"></div>
+                            <div class="bounce2"></div>
+                            <div class="bounce3"></div>
+                          </div>
+                        <h1 style="padding-top: 3%;color:#fafbff">It's time <br> to get to <br> know your <br> users</h1>
+                        <button type="submit" class="btn-mix" style="color:#ead4f5">Try Mixpanel today</button>
+                
                         
                     </div>
                 </div>
                 <div class="grid-item5 card">
                     <div class="camera-img"></div>
                     <div class="card-item">
-                        <li style="list-style-type: circle; color:#a699d8;font-weight: bold;">
-                            <span style="color:#7f84ae">Library Update</span>
+                        <li style="list-style-type: circle; color:#ee728a;font-weight: bold;margin-top: 10px;">
+                            <span style="color:#7f84ae">Culture and Team</span>
                         </li>
                         <h3 style="padding-top: 3%;font-size: 23px;color:#fafbff">Leveraging Social Proof for <br> Growth</h3>
                         <p id='content' style="font-size: 10px;padding-top: 3%; margin-right: 20px;line-height: 17px;color:#d7daf1">Duolingo removes language barriers by connecting people that need 
@@ -260,8 +342,8 @@
                 <div class="grid-item6 card">
                     <div class="light-img"></div>
                     <div class="card-item">
-                        <li style="list-style-type: circle; color:#a699d8;font-weight: bold;">
-                            <span style="color:#7f84ae">Library Update</span>
+                        <li style="list-style-type: circle; color:#2bc4cc;font-weight: bold;margin-top: 10px;">
+                            <span style="color:#7f84ae">Product Launch</span>
                         </li>
                         <h3 style="padding-top: 3%;font-size: 23px;color:#fafbff">Leveraging Social Proof for <br> Growth</h3>
                         <p id='content' style="font-size: 10px;padding-top: 3%; margin-right: 20px;line-height: 17px;color:#d7daf1">Duolingo removes language barriers by connecting people that need 
@@ -286,8 +368,8 @@
                 <div class="grid-item7 card">
                     <div class="ddc-img"></div>
                     <div class="card-item">
-                        <li style="list-style-type: circle; color:#a699d8;font-weight: bold;">
-                            <span style="color:#7f84ae">Library Update</span>
+                        <li style="list-style-type: circle; color:#f3f6fd;font-weight: bold;margin-top: 10px;">
+                            <span style="color:#7f84ae">ddc</span>
                         </li>
                         <h3 style="padding-top: 3%;font-size: 23px;color:#fafbff">Leveraging Social Proof for <br> Growth</h3>
                         <p id='content' style="font-size: 10px;padding-top: 3%; margin-right: 20px;line-height: 17px;color:#d7daf1">Duolingo removes language barriers by connecting people that need 
@@ -312,8 +394,8 @@
                 <div class="grid-item8 card">
                     <div class="ddc-img"></div>
                     <div class="card-item">
-                        <li style="list-style-type: circle; color:#a699d8;font-weight: bold;">
-                            <span style="color:#7f84ae">Library Update</span>
+                        <li style="list-style-type: circle; color:#f3f6fd;font-weight: bold;margin-top: 10px;">
+                            <span style="color:#7f84ae">ddc</span>
                         </li>
                         <h3 style="padding-top: 3%;font-size: 23px;color:#fafbff">Leveraging Social Proof for <br> Growth</h3>
                         <p id='content' style="font-size: 10px;padding-top: 3%; margin-right: 20px;line-height: 17px;color:#d7daf1">Duolingo removes language barriers by connecting people that need 
@@ -338,8 +420,8 @@
                 <div class="grid-item9 card">
                     <div class="person-img"></div>
                     <div class="card-item">
-                        <li style="list-style-type: circle; color:#a699d8;font-weight: bold;">
-                            <span style="color:#7f84ae">Library Update</span>
+                        <li style="list-style-type: circle; color:#c8c9dd;font-weight: bold;margin-top: 10px;">
+                            <span style="color:#7f84ae">Culture and Team</span>
                         </li>
                         <h3 style="padding-top: 3%;font-size: 23px;color:#fafbff">Leveraging Social Proof for <br> Growth</h3>
                         <p id='content' style="font-size: 10px;padding-top: 3%; margin-right: 20px;line-height: 17px;color:#d7daf1">Duolingo removes language barriers by connecting people that need 
@@ -364,8 +446,8 @@
                 <div class="grid-item10 card">
                     <div class="chart-img"></div>
                     <div class="card-item">
-                        <li style="list-style-type: circle; color:#a699d8;font-weight: bold;">
-                            <span style="color:#7f84ae">Library Update</span>
+                        <li style="list-style-type: circle; color:#5ca8f3;font-weight: bold;">
+                            <span style="color:#7f84ae">Trends</span>
                         </li>
                         <h3 style="padding-top: 3%;font-size: 23px;color:#fafbff">Leveraging Social Proof for <br> Growth</h3>
                         <p style="font-size: 10px;padding-top: 3%; margin-right: 20px;line-height: 17px;color:#d7daf1">Duolingo removes language barriers by connecting people that need 
