@@ -202,6 +202,30 @@
                 transform: scale(1.0);
             }
         }
+        @media (min-width:320px) {
+            .search{
+                width: 183px;
+            }
+            .title{
+                font-size: 12px;
+            }
+            .spinner>div{
+                width:6px;
+                height: 6px;
+            }
+            .spinner{
+                width:30px;
+            }
+            .grid-container {
+                display: block;
+            }            
+        }
+
+        @media (min-width:961px) {
+            .grid-container {
+                display: grid;
+            }
+        }
 
     </style>
 </head>
