@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <title>Bang The Table</title>
     <style>
         *{
@@ -30,7 +31,7 @@
             display: grid;
             grid-column-gap: 5px;
             grid-row-gap: 5px;;
-            grid-template-columns: auto auto auto auto;
+            grid-template-columns: 25% 25% 25% 25%;
             padding: 10px;
         }
         
@@ -47,7 +48,7 @@
         }
         .card{
             background-color:#5a5f89;
-            height: 300px;
+            /* height: 350px; */
         }
         .office-img{
             background-image: url(images/Office_Hours.jpg);
@@ -111,6 +112,15 @@
             padding-bottom: 90px;
             padding-top: 90px;
         }
+        .card-item{
+            padding-top:2%;
+            padding-right:2%;
+            padding-left:5%;
+            padding-bottom:2%;
+            font-size: 15px;
+            text-align: left;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -124,6 +134,29 @@
             <div class="grid-container">
                 <div class="grid-item1 card">
                     <div class="office-img"></div>
+                    <div class="card-item">
+                        <li style="list-style-type: circle; color:#a699d8">
+                            <span style="color:#7f84ae">Library Update</span>
+                        </li>
+                        <h3 style="padding-top: 3%;">Leveraging Social Proof for <br> Growth</h3>
+                        <p style="font-size: x-small;padding-top: 3%; margin-right: 20px;line-height: 15px;">Duolingo removes language barriers by connecting people that need 
+                            websites translated with students that are learning a language. Through trial and 
+                            error the team at Duolingo has mastered the art of data driven product development through AB 
+                            testing and a focus on the right metrics to optimize driven product development through AB testing and a 
+                            focus on the right metrics to to optimize driven product development through AB 
+                            testing and a focus on the right optimize.
+                        </p>
+                        <div style="margin-top: 30px;margin-bottom: 20px;">
+                            <div style="display: inline-block;">
+                                <i class="far fa-user"></i>
+                                <span>Anna</span>
+                            </div>
+                            <div style="display: inline-block;">
+                                <i class="far fa-clock"></i>
+                                <span>Today</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="grid-item2 card">
                     <div class="fab-deploy-img"></div>
