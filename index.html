@@ -26,7 +26,91 @@
             font-weight: bold;
             padding-left: 50px;
         }
-
+        .grid-container{
+            display: grid;
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;;
+            grid-template-columns: auto auto auto auto;
+            padding: 10px;
+        }
+        
+        .containter{
+            margin:5% 10% 10% 10%;
+        }
+        .grid-item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+        .grid-item10{
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+        .card{
+            background-color:#5a5f89;
+            height: 300px;
+        }
+        .office-img{
+            background-image: url(images/Office_Hours.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding-bottom: 90px;
+            padding-top: 90px;
+        }
+        .fab-deploy-img{
+            background-image: url(images/Fab_deploy.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom: 90px;
+            padding-top: 90px;
+        }
+        .team-img{
+            background-image: url(images/Team.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 90px;
+            padding-top: 90px;
+        }
+        .camera-img{
+            background-image: url(images/Camera.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 90px;
+            padding-top: 90px;
+        }
+        .light-img{
+            background-image: url(images/Light.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom: 90px;
+            padding-top: 90px;
+        }
+        .ddc-img{
+            background-image: url(images/ddc.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 90px;
+            padding-top: 90px;
+        }
+        .person-img{
+            background-image: url(images/Person.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 90px;
+            padding-top: 90px;
+        }
+        .chart-img{
+            background-image: url(images/Chart.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding-bottom: 90px;
+            padding-top: 90px;
+        }
     </style>
 </head>
 <body>
@@ -37,7 +121,38 @@
             </div>
         </div>
         <div class="containter">
-
+            <div class="grid-container">
+                <div class="grid-item1 card">
+                    <div class="office-img"></div>
+                </div>
+                <div class="grid-item2 card">
+                    <div class="fab-deploy-img"></div>
+                </div>
+                <div class="grid-item3 card">
+                    <div class="team-img"></div>
+                </div> 
+                <div class="grid-item4 card">
+                    
+                </div>
+                <div class="grid-item5 card">
+                    <div class="camera-img"></div>
+                </div>
+                <div class="grid-item6 card">
+                    <div class="light-img"></div>
+                </div> 
+                <div class="grid-item7 card">
+                    <div class="ddc-img"></div>
+                </div> 
+                <div class="grid-item8 card">
+                    <div class="ddc-img"></div>
+                </div> 
+                <div class="grid-item9 card">
+                    <div class="person-img"></div>
+                </div> 
+                <div class="grid-item10 card">
+                    <div class="chart-img"></div>
+                </div>   
+            </div>
         </div>
     </div>
 </body>
