@@ -128,6 +128,28 @@
         .users{
             margin:25px;
         }
+        .item-data{
+            font-size: 10px;
+            padding-top: 3%; 
+            margin-right: 20px;
+            line-height: 17px;
+            color:#d7daf1
+        }
+        .card-icon{
+            margin-top: 30px;
+            margin-bottom: 20px;
+            color: #aaafd8;
+        }
+        .list-item{
+            list-style-type: circle; 
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .heading{
+            padding-top: 3%;
+            font-size: 23px;
+            color:#fafbff
+        }
         .search{
             float: right;
             height: 40px;
@@ -202,7 +224,8 @@
                 transform: scale(1.0);
             }
         }
-        @media (min-width:320px) {
+        /* @media (max-width: 240px) { */
+            @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
             .search{
                 width: 183px;
             }
@@ -221,7 +244,7 @@
             }            
         }
 
-        @media (min-width:961px) {
+        @media only screen and (min-device-width : 769px) and (max-width: 1024px) {
             .grid-container {
                 display: grid;
             }
@@ -249,23 +272,23 @@
                 <div class="grid-item1 card">
                     <div class="office-img"></div>
                     <div class="card-item">
-                        <li style="list-style-type: circle; color:#a699d8;font-weight: bold;">
+                        <li style="color:#a699d8;" class="list-item">
                             <span style="color:#7f84ae">Library Update</span>
                         </li>
-                        <h3 style="padding-top: 3%;font-size: 23px;color:#fafbff">Leveraging Social Proof for <br> Growth</h3>
-                        <p style="font-size: 10px;padding-top: 3%; margin-right: 20px;line-height: 17px;color:#d7daf1">Duolingo removes language barriers by connecting people that need 
+                        <h3 class="heading">Leveraging Social Proof for <br> Growth</h3>
+                        <p class="item-data">Duolingo removes language barriers by connecting people that need 
                             websites translated with students that are learning a language. Through trial and 
                             error the team at Duolingo has mastered the art of data driven product development through AB 
                             testing and a focus on the right metrics to optimize driven product development through AB testing and a 
                             focus on the right metrics to to optimize driven product development through AB 
                             testing and a focus on the right optimize.
                         </p>
-                        <div style="margin-top: 30px;margin-bottom: 20px;color: #aaafd8;">
+                        <div class="card-icon">
                             <div style="display: inline-block;">
                                 <i class="far fa-user" style="font-size: 15px;"></i>
                                 <span class="card-footer">Anna</span>
                             </div>
-                            <div style="display: inline-block;" style="font-size: 15px;">
+                            <div style="display: inline-block;font-size: 15px;">
                                 <i class="far fa-clock"></i>
                                 <span class="card-footer">Today</span>
                             </div>
@@ -275,25 +298,25 @@
                 <div class="grid-item2 card">
                     <div class="fab-deploy-img"></div>
                     <div class="card-item">
-                        <li style="list-style-type: circle; color:#ffc718;font-weight: bold;margin-top: 10px;">
+                        <li style="color:#ffc718;" class="list-item">
                             <span style="color:#7f84ae">Library Update</span>
                         </li>
-                        <h3 style="padding-top: 3%;font-size: 23px;color:#fafbff">Leveraging Social Proof for <br> Growth</h3>
-                        <p id='content' style="font-size: 10px;padding-top: 3%; margin-right: 20px;line-height: 17px;color:#d7daf1">Duolingo removes language barriers by connecting people that need 
+                        <h3 class="heading">Leveraging Social Proof for <br> Growth</h3>
+                        <p id='content' class="item-data">Duolingo removes language barriers by connecting people that need 
                             websites translated with students that are learning a language. Through trial and 
                             error the team at Duolingo has mastered the art of data driven product development through AB 
                             testing and a focus on the right metrics to optimize driven product development through AB testing and a 
                             focus on the right metrics to to optimize driven product development through AB 
                             testing and a focus on the right optimize.
                         </p>
-                        <div style="margin-top: 30px;margin-bottom: 20px;color: #aaafd8;">
+                        <div class="card-icon">
                             <div style="display: inline-block;">
                                 <i class="far fa-user" style="font-size: 15px;"></i>
                                 <span class="card-footer">Anna</span>
                             </div>
-                            <div style="display: inline-block;" style="font-size: 15px;">
+                            <div style="display: inline-block;font-size: 15px;">
                                 <i class="far fa-clock"></i>
-                                <span class="card-footer">Today</span>
+                                <span class="card-footer">2 days ago</span>
                             </div>
                         </div>
                     </div>
@@ -301,23 +324,23 @@
                 <div class="grid-item3 card">
                     <div class="team-img"></div>
                     <div class="card-item">
-                        <li style="list-style-type: circle; color:#c7c8dd;font-weight: bold;margin-top: 10px;">
+                        <li style="color:#c7c8dd;" class="list-item">
                             <span style="color:#7f84ae">Culture and Team</span>
                         </li>
-                        <h3 style="padding-top: 3%;font-size: 23px;color:#fafbff">Leveraging Social Proof for <br> Growth</h3>
-                        <p id='content' style="font-size: 10px;padding-top: 3%; margin-right: 20px;line-height: 17px;color:#d7daf1">Duolingo removes language barriers by connecting people that need 
+                        <h3 class="heading">Leveraging Social Proof for <br> Growth</h3>
+                        <p id='content' class="item-data">Duolingo removes language barriers by connecting people that need 
                             websites translated with students that are learning a language. Through trial and 
                             error the team at Duolingo has mastered the art of data driven product development through AB 
                             testing and a focus on the right metrics to optimize driven product development through AB testing and a 
                             focus on the right metrics to to optimize driven product development through AB 
                             testing and a focus on the right optimize.
                         </p>
-                        <div style="margin-top: 30px;margin-bottom: 20px;color: #aaafd8;">
+                        <div class="card-icon">
                             <div style="display: inline-block;">
                                 <i class="far fa-user" style="font-size: 15px;"></i>
                                 <span class="card-footer">Anna</span>
                             </div>
-                            <div style="display: inline-block;" style="font-size: 15px;">
+                            <div style="display: inline-block;font-size: 15px;">
                                 <i class="far fa-clock"></i>
                                 <span class="card-footer">Today</span>
                             </div>
@@ -332,7 +355,7 @@
                             <div class="bounce3"></div>
                           </div>
                         <h1 style="padding-top: 3%;color:#fafbff">It's time <br> to get to <br> know your <br> users</h1>
-                        <button type="submit" class="btn-mix" style="color:#ead4f5">Try Mixpanel today</button>
+                        <button type="submit" class="btn-mix" style="color:#ead4f5;padding-bottom: 10px;">Try Mixpanel today</button>
                 
                         
                     </div>
@@ -340,23 +363,23 @@
                 <div class="grid-item5 card">
                     <div class="camera-img"></div>
                     <div class="card-item">
-                        <li style="list-style-type: circle; color:#ee728a;font-weight: bold;margin-top: 10px;">
+                        <li style="color:#ee728a;" class="list-item">
                             <span style="color:#7f84ae">Culture and Team</span>
                         </li>
-                        <h3 style="padding-top: 3%;font-size: 23px;color:#fafbff">Leveraging Social Proof for <br> Growth</h3>
-                        <p id='content' style="font-size: 10px;padding-top: 3%; margin-right: 20px;line-height: 17px;color:#d7daf1">Duolingo removes language barriers by connecting people that need 
+                        <h3 class="heading">Leveraging Social Proof for <br> Growth</h3>
+                        <p id='content' class="item-data">Duolingo removes language barriers by connecting people that need 
                             websites translated with students that are learning a language. Through trial and 
                             error the team at Duolingo has mastered the art of data driven product development through AB 
                             testing and a focus on the right metrics to optimize driven product development through AB testing and a 
                             focus on the right metrics to to optimize driven product development through AB 
                             testing and a focus on the right optimize.
                         </p>
-                        <div style="margin-top: 30px;margin-bottom: 20px;color: #aaafd8;">
+                        <div class="card-icon">
                             <div style="display: inline-block;">
                                 <i class="far fa-user" style="font-size: 15px;"></i>
                                 <span class="card-footer">Anna</span>
                             </div>
-                            <div style="display: inline-block;" style="font-size: 15px;">
+                            <div style="display: inline-block;font-size: 15px;">
                                 <i class="far fa-clock"></i>
                                 <span class="card-footer">Today</span>
                             </div>
@@ -366,23 +389,23 @@
                 <div class="grid-item6 card">
                     <div class="light-img"></div>
                     <div class="card-item">
-                        <li style="list-style-type: circle; color:#2bc4cc;font-weight: bold;margin-top: 10px;">
+                        <li style="color:#2bc4cc;" class="list-item">
                             <span style="color:#7f84ae">Product Launch</span>
                         </li>
-                        <h3 style="padding-top: 3%;font-size: 23px;color:#fafbff">Leveraging Social Proof for <br> Growth</h3>
-                        <p id='content' style="font-size: 10px;padding-top: 3%; margin-right: 20px;line-height: 17px;color:#d7daf1">Duolingo removes language barriers by connecting people that need 
+                        <h3 class="heading">Leveraging Social Proof for <br> Growth</h3>
+                        <p id='content' class="item-data">Duolingo removes language barriers by connecting people that need 
                             websites translated with students that are learning a language. Through trial and 
                             error the team at Duolingo has mastered the art of data driven product development through AB 
                             testing and a focus on the right metrics to optimize driven product development through AB testing and a 
                             focus on the right metrics to to optimize driven product development through AB 
                             testing and a focus on the right optimize.
                         </p>
-                        <div style="margin-top: 30px;margin-bottom: 20px;color: #aaafd8;">
+                        <div class="card-icon">
                             <div style="display: inline-block;">
                                 <i class="far fa-user" style="font-size: 15px;"></i>
                                 <span class="card-footer">Anna</span>
                             </div>
-                            <div style="display: inline-block;" style="font-size: 15px;">
+                            <div style="display: inline-block;font-size: 15px;">
                                 <i class="far fa-clock"></i>
                                 <span class="card-footer">Today</span>
                             </div>
@@ -392,23 +415,23 @@
                 <div class="grid-item7 card">
                     <div class="ddc-img"></div>
                     <div class="card-item">
-                        <li style="list-style-type: circle; color:#f3f6fd;font-weight: bold;margin-top: 10px;">
+                        <li style="color:#f3f6fd;" class="list-item">
                             <span style="color:#7f84ae">ddc</span>
                         </li>
-                        <h3 style="padding-top: 3%;font-size: 23px;color:#fafbff">Leveraging Social Proof for <br> Growth</h3>
-                        <p id='content' style="font-size: 10px;padding-top: 3%; margin-right: 20px;line-height: 17px;color:#d7daf1">Duolingo removes language barriers by connecting people that need 
+                        <h3 class="heading">Leveraging Social Proof for <br> Growth</h3>
+                        <p id='content' class="item-data">Duolingo removes language barriers by connecting people that need 
                             websites translated with students that are learning a language. Through trial and 
                             error the team at Duolingo has mastered the art of data driven product development through AB 
                             testing and a focus on the right metrics to optimize driven product development through AB testing and a 
                             focus on the right metrics to to optimize driven product development through AB 
                             testing and a focus on the right optimize.
                         </p>
-                        <div style="margin-top: 30px;margin-bottom: 20px;color: #aaafd8;">
+                        <div class="card-icon">
                             <div style="display: inline-block;">
                                 <i class="far fa-user" style="font-size: 15px;"></i>
                                 <span class="card-footer">Anna</span>
                             </div>
-                            <div style="display: inline-block;" style="font-size: 15px;">
+                            <div style="display: inline-block;font-size: 15px;">
                                 <i class="far fa-clock"></i>
                                 <span class="card-footer">Today</span>
                             </div>
@@ -418,23 +441,23 @@
                 <div class="grid-item8 card">
                     <div class="ddc-img"></div>
                     <div class="card-item">
-                        <li style="list-style-type: circle; color:#f3f6fd;font-weight: bold;margin-top: 10px;">
+                        <li style="color:#f3f6fd;" class="list-item">
                             <span style="color:#7f84ae">ddc</span>
                         </li>
-                        <h3 style="padding-top: 3%;font-size: 23px;color:#fafbff">Leveraging Social Proof for <br> Growth</h3>
-                        <p id='content' style="font-size: 10px;padding-top: 3%; margin-right: 20px;line-height: 17px;color:#d7daf1">Duolingo removes language barriers by connecting people that need 
+                        <h3 class="heading">Leveraging Social Proof for <br> Growth</h3>
+                        <p id='content' class="item-data">Duolingo removes language barriers by connecting people that need 
                             websites translated with students that are learning a language. Through trial and 
                             error the team at Duolingo has mastered the art of data driven product development through AB 
                             testing and a focus on the right metrics to optimize driven product development through AB testing and a 
                             focus on the right metrics to to optimize driven product development through AB 
                             testing and a focus on the right optimize.
                         </p>
-                        <div style="margin-top: 30px;margin-bottom: 20px;color: #aaafd8;">
+                        <div class="card-icon">
                             <div style="display: inline-block;">
                                 <i class="far fa-user" style="font-size: 15px;"></i>
                                 <span class="card-footer">Anna</span>
                             </div>
-                            <div style="display: inline-block;" style="font-size: 15px;">
+                            <div style="display: inline-block;font-size: 15px;">
                                 <i class="far fa-clock"></i>
                                 <span class="card-footer">Today</span>
                             </div>
@@ -444,23 +467,23 @@
                 <div class="grid-item9 card">
                     <div class="person-img"></div>
                     <div class="card-item">
-                        <li style="list-style-type: circle; color:#c8c9dd;font-weight: bold;margin-top: 10px;">
+                        <li style="color:#c8c9dd;">
                             <span style="color:#7f84ae">Culture and Team</span>
                         </li>
-                        <h3 style="padding-top: 3%;font-size: 23px;color:#fafbff">Leveraging Social Proof for <br> Growth</h3>
-                        <p id='content' style="font-size: 10px;padding-top: 3%; margin-right: 20px;line-height: 17px;color:#d7daf1">Duolingo removes language barriers by connecting people that need 
+                        <h3 class="heading">Leveraging Social Proof for <br> Growth</h3>
+                        <p id='content' class="item-data">Duolingo removes language barriers by connecting people that need 
                             websites translated with students that are learning a language. Through trial and 
                             error the team at Duolingo has mastered the art of data driven product development through AB 
                             testing and a focus on the right metrics to optimize driven product development through AB testing and a 
                             focus on the right metrics to to optimize driven product development through AB 
                             testing and a focus on the right optimize.
                         </p>
-                        <div style="margin-top: 30px;margin-bottom: 20px;color: #aaafd8;">
+                        <div class="card-icon">
                             <div style="display: inline-block;">
                                 <i class="far fa-user" style="font-size: 15px;"></i>
                                 <span class="card-footer">Anna</span>
                             </div>
-                            <div style="display: inline-block;" style="font-size: 15px;">
+                            <div style="display: inline-block;font-size: 15px;" >
                                 <i class="far fa-clock"></i>
                                 <span class="card-footer">Today</span>
                             </div>
@@ -470,23 +493,23 @@
                 <div class="grid-item10 card">
                     <div class="chart-img"></div>
                     <div class="card-item">
-                        <li style="list-style-type: circle; color:#5ca8f3;font-weight: bold;">
+                        <li style="color:#5ca8f3;"  class="list-item">
                             <span style="color:#7f84ae">Trends</span>
                         </li>
-                        <h3 style="padding-top: 3%;font-size: 23px;color:#fafbff">Leveraging Social Proof for <br> Growth</h3>
-                        <p style="font-size: 10px;padding-top: 3%; margin-right: 20px;line-height: 17px;color:#d7daf1">Duolingo removes language barriers by connecting people that need 
+                        <h3 class="heading">Leveraging Social Proof for <br> Growth</h3>
+                        <p class="item-data">Duolingo removes language barriers by connecting people that need 
                             websites translated with students that are learning a language. Through trial and 
                             error the team at Duolingo has mastered the art of data driven product development through AB 
                             testing and a focus on the right metrics to optimize driven product development through AB testing and a 
                             focus on the right metrics to to optimize driven product development through AB 
                             testing and a focus on the right optimize.
                         </p>
-                        <div style="margin-top: 30px;margin-bottom: 20px;color: #aaafd8;">
+                        <div class="card-icon">
                             <div style="display: inline-block;">
                                 <i class="far fa-user" style="font-size: 15px;"></i>
                                 <span class="card-footer">Anna</span>
                             </div>
-                            <div style="display: inline-block;" style="font-size: 15px;">
+                            <div style="display: inline-block;font-size: 15px;" >
                                 <i class="far fa-clock"></i>
                                 <span class="card-footer">Today</span>
                             </div>
